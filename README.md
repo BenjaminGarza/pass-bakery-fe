@@ -1,5 +1,6 @@
 # pass-bakery-fe
-pass bakery front end exercise 2
+pass bakery front end exercise 3
 
 
-![](Exercise_2_Screenshot.png)
+![](Screenshot-full.png)
+![](Screenshot-partial.png)
