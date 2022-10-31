@@ -8,9 +8,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 main{ 
-    margin: 16px;
     font-family: 'Source Sans Pro', 'Helvetica', 'Arial';
-    overflow: scroll;
+    min-width: 200px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+ }
+ section{
+    margin-bottom: 32px;
  }
 h1{
     font-family: "Qwitcher Grypen";
@@ -21,16 +28,50 @@ font-weight: bold;
 font-size: 32px;
 margin-bottom: 16px;
 }
+h3{
+    font-weight: bold;
+    font-size: 24px;
+}
 ul{
     margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 li{
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-left: 24px;
-    list-style: disc;
+    padding: 16px;
+    margin: 16px;
+    border: 2px solid lightgray;
+    border-radius: 5px;;
+    flex: 200px;
+    min-width: 40%;
 }
 p{
-    margin-bottom: 32px;
+    
 }
-
+.invisible{
+    border: 0;
+    height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.bread{
+    max-width: 520px;   
+}
+.headline-container{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.hours{
+    padding-top: 32px;
+}
+.menu-text{
+    font-style: italic;
+    color: grey;
+}
