@@ -1,6 +1,6 @@
-import "Bread.css";
+import "./Bread.css";
 
-export const Bread = () => {
+const Bread = () => {
   return (
     <section>
       <h2>Bread</h2>
@@ -29,3 +29,5 @@ export const Bread = () => {
     </section>
   );
 };
+
+export default Bread;

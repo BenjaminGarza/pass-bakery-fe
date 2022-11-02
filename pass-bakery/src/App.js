@@ -18,7 +18,12 @@ function App() {
         <title>PassBakery</title>
       </head>
       <body>
-        <main></main>
+        <main>
+          <Headline></Headline>
+          <Coffee></Coffee>
+          <Breakfast></Breakfast>
+          <Bread></Bread>
+        </main>
       </body>
     </html>
   );

@@ -1,6 +1,6 @@
-import "Coffee.css";
+import "./Coffee.css";
 
-export const Coffee = () => {
+const Coffee = () => {
   return (
     <section>
       <h2>Coffee</h2>
@@ -35,3 +35,5 @@ export const Coffee = () => {
     </section>
   );
 };
+
+export default Coffee;

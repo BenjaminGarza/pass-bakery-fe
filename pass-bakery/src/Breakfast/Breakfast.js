@@ -1,6 +1,6 @@
-import "Breakdast.css";
+import "./Breakfast.css";
 
-export const Breakfast = () => {
+const Breakfast = () => {
   return (
     <section>
       <h2>Breakfast:</h2>
@@ -29,3 +29,5 @@ export const Breakfast = () => {
     </section>
   );
 };
+
+export default Breakfast;
