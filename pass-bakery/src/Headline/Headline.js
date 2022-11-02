@@ -1,5 +1,6 @@
 import logo from "./one-pass.svg";
 import bread from "./bread.jpeg";
+import "Headline.css";
 const Headline = () => {
   return (
     <section class="headline-container">

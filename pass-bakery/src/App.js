@@ -1,4 +1,8 @@
 import "./App.css";
+import Headline from "./Headline/Headline";
+import Coffee from "./Coffee/Coffee";
+import Breakfast from "./Breakfast/Breakfast";
+import Bread from "./Bread/Bread";
 
 function App() {
   return (

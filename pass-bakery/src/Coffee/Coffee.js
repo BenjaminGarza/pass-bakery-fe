@@ -1,4 +1,4 @@
-import React from "react";
+import "Coffee.css";
 
 export const Coffee = () => {
   return (

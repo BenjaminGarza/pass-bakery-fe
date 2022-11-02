@@ -1,4 +1,4 @@
-import React from "react";
+import "Bread.css";
 
 export const Bread = () => {
   return (
