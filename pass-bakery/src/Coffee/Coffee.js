@@ -3,7 +3,7 @@ import "./Coffee.css";
 const Coffee = () => {
   return (
     <section>
-      <h2>Coffee</h2>
+      <h2 class="coffee">Coffee</h2>
       <ul>
         <li>
           <h3>Espresso</h3>

@@ -6,7 +6,7 @@ const Headline = () => {
     <section class="headline-container">
       <div class="">
         <img src={logo} alt="one-pass" />
-        <h1>Pass Bakery</h1>
+        <h1 class="pass-headline">Pass Bakery</h1>
         <p>620 N 25th St, San Francisco, CA</p>
         <h2 class="hours">Hours</h2>
         <p>
