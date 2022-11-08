@@ -37,6 +37,8 @@ const Invisible = styled.div`
   margin-bottom: 0;
   padding-top: 0;
   padding-bottom: 0;
+  flex: 260px;
+  min-width: 40%;
 `;
 
 const Coffee = () => {
