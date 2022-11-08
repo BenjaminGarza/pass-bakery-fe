@@ -3,6 +3,15 @@ import Headline from "./Headline/Headline";
 import Coffee from "./Coffee/Coffee";
 import Breakfast from "./Breakfast/Breakfast";
 import Bread from "./Bread/Bread";
+import styled from "styled-components";
+
+const Primary = styled.main`
+  font-family: "Source Sans Pro", "Helvetica", "Arial";
+  min-width: 200px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+`;
 
 function App() {
   return (
@@ -18,12 +27,12 @@ function App() {
         <title>PassBakery</title>
       </head>
       <body>
-        <main>
+        <Primary>
           <Headline></Headline>
           <Coffee></Coffee>
           <Breakfast></Breakfast>
           <Bread></Bread>
-        </main>
+        </Primary>
       </body>
     </html>
   );
