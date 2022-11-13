@@ -25,6 +25,9 @@ const PassHeadline = styled.h1`
   font-family: "Qwitcher Grypen";
   font-size: 160px;
 `;
+var day = new Date().getDay;
+var time = new Date().getHours;
+console.log(day, time);
 
 const Headline = () => {
   return (
@@ -39,6 +42,7 @@ const Headline = () => {
           <br />
           Sat-Sun 7AM-4PM PT
         </p>
+        <br></br>
       </div>
       <div>
         <Bread src={bread} alt="Fresh baked bread" />

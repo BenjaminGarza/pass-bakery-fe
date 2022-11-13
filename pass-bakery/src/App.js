@@ -2,8 +2,12 @@ import Headline from "./Headline/Headline";
 import Coffee from "./Coffee/Coffee";
 import Breakfast from "./Breakfast/Breakfast";
 import Bread from "./Bread/Bread";
+import Cart from "./Cart/Cart";
 import styled from "styled-components";
 
+const Body = styled.body`
+  display: flex;
+`;
 const Primary = styled.main`
   font-family: "Source Sans Pro", "Helvetica", "Arial";
   min-width: 200px;
@@ -25,14 +29,15 @@ function App() {
         <link rel="stylesheet" href="style.css" />
         <title>PassBakery</title>
       </head>
-      <body>
+      <Body>
         <Primary>
           <Headline></Headline>
           <Coffee></Coffee>
           <Breakfast></Breakfast>
           <Bread></Bread>
         </Primary>
-      </body>
+        <Cart></Cart>
+      </Body>
     </html>
   );
 }
