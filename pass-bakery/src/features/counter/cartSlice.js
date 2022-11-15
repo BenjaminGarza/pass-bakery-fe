@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+const initialState = {
+  items: ["test", "5.99"],
+};
 export const cartSlice = createSlice({
-  name: "counter",
-  initialState: {
-    cart: [],
-  },
+  name: "cart",
+  initialState,
   reducers: {
     add: (state, action) => {
       // Redux Toolkit allows us to write "mutating" logic in reducers. It
@@ -13,7 +14,8 @@ export const cartSlice = createSlice({
       // immutable state based off those changes
 
       //maybe use action.payload for the cart item?
-      state.cart.push({ ...action.payload });
+      state.cart.items = [action.payload];
+      console.log(...action.payload, "Action payload");
     },
     remove: (state, action) => {
       //declare index for removal

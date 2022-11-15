@@ -8,8 +8,6 @@ import styled from "styled-components";
 const Body = styled.body`
   display: flex;
 `;
-const cart = Cart();
-console.log(cart);
 
 const Primary = styled.main`
   font-family: "Source Sans Pro", "Helvetica", "Arial";
@@ -37,9 +35,9 @@ function App() {
           <Headline></Headline>
           <Coffee></Coffee>
           <Breakfast></Breakfast>
-          <Bread></Bread>
+          <Bread />
         </Primary>
-        {Cart()}
+        <Cart test="Hello" />
       </Body>
     </html>
   );

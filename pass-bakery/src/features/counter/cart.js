@@ -2,7 +2,9 @@ import React from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
 
-export default function Cart() {
+export default function Cart(props) {
+  const cart = useSelector((state) => state.cart);
+
   const Aside = styled.aside`
     min-width: 512px;
     border-left: 3px solid lightgrey;
@@ -39,10 +41,14 @@ export default function Cart() {
   return (
     <Aside>
       <Title>Your Order</Title>
-      <Section>{}</Section>
+      {cart.items.map((item) => (
+        <div key={item}>{item}</div>
+      ))}
+
+      <Section>{props.test}</Section>
       <Div>
         <TotalText>Your total is:</TotalText>
-        <TotalPrice>${"totalPrice"}</TotalPrice>
+        <TotalPrice>${"0.00"}</TotalPrice>
       </Div>
       <CheckoutButton>Checkout ({"numberOfItems"})</CheckoutButton>
     </Aside>
