@@ -2,12 +2,15 @@ import Headline from "./Headline/Headline";
 import Coffee from "./Coffee/Coffee";
 import Breakfast from "./Breakfast/Breakfast";
 import Bread from "./Bread/Bread";
-import Cart from "./Cart/Cart";
+import Cart from "./features/counter/cart";
 import styled from "styled-components";
 
 const Body = styled.body`
   display: flex;
 `;
+const cart = Cart();
+console.log(cart);
+
 const Primary = styled.main`
   font-family: "Source Sans Pro", "Helvetica", "Arial";
   min-width: 200px;
@@ -36,7 +39,6 @@ function App() {
           <Breakfast></Breakfast>
           <Bread></Bread>
         </Primary>
-        <Cart></Cart>
       </Body>
     </html>
   );

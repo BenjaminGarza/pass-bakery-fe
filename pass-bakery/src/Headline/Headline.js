@@ -12,7 +12,7 @@ const Section = styled.section`
   margin-bottom: 32px;
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid grey;
+  border-bottom: 2px solid lightgrey;
   padding-top: 48px;
   padding-bottom: 48px;
 `;
