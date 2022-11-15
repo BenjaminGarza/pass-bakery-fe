@@ -39,6 +39,7 @@ function App() {
           <Breakfast></Breakfast>
           <Bread></Bread>
         </Primary>
+        {Cart()}
       </Body>
     </html>
   );
