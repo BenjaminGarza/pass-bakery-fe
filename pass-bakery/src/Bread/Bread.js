@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import { add } from "../features/counter/cartSlice";
+import { useDispatch } from "react-redux";
+
+const dispatch = useDispatch;
 
 const Title = styled.h2`
   font-weight: bold;
@@ -37,7 +41,9 @@ const Bread = () => {
       <Title>Bread</Title>
       <ListContainer>
         <ListItem>
-          <Subtitle>Pain de campagne</Subtitle>
+          <Subtitle onClick={() => dispatch(add("title", "price"))}>
+            Pain de campagne
+          </Subtitle>
           <br />
           <Paragraph>$7.00</Paragraph>
         </ListItem>

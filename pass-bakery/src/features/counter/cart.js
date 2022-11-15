@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import styled from "styled-components";
 
 export default function Cart() {
@@ -38,7 +39,7 @@ export default function Cart() {
   return (
     <Aside>
       <Title>Your Order</Title>
-      <Section></Section>
+      <Section>{}</Section>
       <Div>
         <TotalText>Your total is:</TotalText>
         <TotalPrice>${"totalPrice"}</TotalPrice>
