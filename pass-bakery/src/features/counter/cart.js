@@ -1,9 +1,12 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import styled from "styled-components";
+import { useDispatch } from "react-redux";
+import { remove } from "./cartSlice";
 
 export default function Cart(props) {
   const cart = useSelector((state) => state.cart);
+  const dispatch = useDispatch();
   const itemQuantity = cart.items.length;
   let price = 0;
   if (itemQuantity > 1) {
@@ -51,19 +54,18 @@ export default function Cart(props) {
   return (
     <Aside>
       <Title>Your Order</Title>
-      {cart.items.map((item) => (
+      {cart.items.map((item, itemIndex) => (
         <div key={item}>
           <div>
             {item[0]}
             {"$" + item[1].toFixed(2)}
           </div>
           <div>
-            <button>Remove</button>
+            <button onClick={() => dispatch(remove(itemIndex))}>Remove</button>
           </div>
         </div>
       ))}
 
-      <Section>{}</Section>
       <Div>
         <TotalText>Your total is:</TotalText>
         <TotalPrice>${price.toFixed(2)}</TotalPrice>

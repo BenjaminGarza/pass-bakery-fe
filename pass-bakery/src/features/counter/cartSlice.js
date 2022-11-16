@@ -29,8 +29,11 @@ export const cartSlice = createSlice({
     remove: (state, action) => {
       //declare index for removal
       //use array.splice(indexForRemoval,1)
-
-      state.cart.splice(action.payload, 1);
+      console.log(action.payload);
+      state.items = state.items.filter(
+        (array, currentElement) => currentElement !== action.payload
+      );
+      console.log(state.items);
     },
     //incrementByAmount: (state, action) => {
     //  state.value += action.payload;

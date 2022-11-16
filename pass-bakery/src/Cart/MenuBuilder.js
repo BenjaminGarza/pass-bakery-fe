@@ -41,6 +41,7 @@ export default function MenuBuilder(props) {
     //would need to return multiple
 
     //menuBuilder takes in item as props
+    //id
 
     <ListItem
       key={itemTitle}
