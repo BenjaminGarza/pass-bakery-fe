@@ -5,10 +5,10 @@ import MenuBuilder from "../Cart/MenuBuilder";
 
 export function Bread(props) {
   const breadArray = [
-    ["Pain de campagne", "$7.00"],
-    ["Olive and lemon", "$7.50"],
-    ["Brioche", "$8.00"],
-    ["Ciabatta", "$5.50"],
+    ["Pain de campagne", 7.0],
+    ["Olive and lemon", 7.5],
+    ["Brioche", 8.0],
+    ["Ciabatta", 5.5],
   ];
 
   const Title = styled.h2`

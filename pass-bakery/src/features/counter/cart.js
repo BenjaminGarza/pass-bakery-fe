@@ -5,6 +5,15 @@ import styled from "styled-components";
 export default function Cart(props) {
   const cart = useSelector((state) => state.cart);
   const itemQuantity = cart.items.length;
+  let price = 0;
+  if (itemQuantity > 1) {
+    for (let i = 1; i < itemQuantity; i++) {
+      console.log(price, cart.items[i][1], "Here one");
+      console.log(typeof price, typeof cart.items[i][1], "here is the test");
+      price += cart.items[i][1];
+      console.log(price, cart.items[i][1], "Here two");
+    }
+  }
 
   const Aside = styled.aside`
     min-width: 512px;
@@ -43,13 +52,21 @@ export default function Cart(props) {
     <Aside>
       <Title>Your Order</Title>
       {cart.items.map((item) => (
-        <div key={item}>{item}</div>
+        <div key={item}>
+          <div>
+            {item[0]}
+            {"$" + item[1].toFixed(2)}
+          </div>
+          <div>
+            <button>Remove</button>
+          </div>
+        </div>
       ))}
 
-      <Section>{props.test}</Section>
+      <Section>{}</Section>
       <Div>
         <TotalText>Your total is:</TotalText>
-        <TotalPrice>${"0.00"}</TotalPrice>
+        <TotalPrice>${price.toFixed(2)}</TotalPrice>
       </Div>
       <CheckoutButton>Checkout ({itemQuantity})</CheckoutButton>
     </Aside>

@@ -2,11 +2,11 @@ import styled from "styled-components";
 import MenuBuilder from "../Cart/MenuBuilder";
 
 const coffeeArray = [
-  ["Espresso", "$2.75"],
-  ["Cappuccino", "$3.50"],
-  ["Latte", "$4.00"],
-  ["Drip", "$2.50"],
-  ["Pour Over", "$4.75"],
+  ["Espresso", 2.75],
+  ["Cappuccino", 3.5],
+  ["Latte", 4.0],
+  ["Drip", 2.5],
+  ["Pour Over", 4.75],
 ];
 
 const Title = styled.h2`

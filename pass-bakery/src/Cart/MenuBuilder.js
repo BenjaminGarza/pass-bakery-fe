@@ -8,6 +8,7 @@ export default function MenuBuilder(props) {
   const dispatch = useDispatch();
   const itemTitle = props[0];
   const itemPrice = props[1];
+  // console.log(typeof itemPrice, "Here is item type");
 
   const Subtitle = styled.h3`
     font-weight: bold;
@@ -48,7 +49,7 @@ export default function MenuBuilder(props) {
     >
       <Subtitle>{itemTitle}</Subtitle>
       <br />
-      <Paragraph>{itemPrice}</Paragraph>
+      <Paragraph>{itemPrice.toFixed(2)}</Paragraph>
     </ListItem>
   );
 }

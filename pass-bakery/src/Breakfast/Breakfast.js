@@ -2,10 +2,10 @@ import styled from "styled-components";
 import MenuBuilder from "../Cart/MenuBuilder";
 
 const breakfastArray = [
-  ["Oatmeal", "$4.00"],
-  ["Toast", "$3.50"],
-  ["Egg Sandwich", "$5.50"],
-  ["Egg and Cheese Sandwich", "$6.50"],
+  ["Oatmeal", 4.0],
+  ["Toast", 3.5],
+  ["Egg Sandwich", 5.5],
+  ["Egg and Cheese Sandwich", 6.5],
 ];
 
 const Title = styled.h2`
