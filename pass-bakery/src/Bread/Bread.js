@@ -17,10 +17,20 @@ export function Bread(props) {
     margin-bottom: 16px;
   `;
 
+  const ListContainer = styled.ul`
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  `;
+
   return (
     <section>
       <Title>Bread</Title>
-      {breadArray.map((item) => MenuBuilder(item))}
+      <ListContainer>
+        {breadArray.map((item) => MenuBuilder(item))}
+      </ListContainer>
     </section>
   );
 }
