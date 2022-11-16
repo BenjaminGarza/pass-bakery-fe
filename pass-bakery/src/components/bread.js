@@ -1,7 +1,5 @@
 import styled from "styled-components";
-import { add } from "../features/counter/cartSlice";
-import { useDispatch } from "react-redux";
-import MenuBuilder from "../Cart/MenuBuilder";
+import MenuBuilder from "./menuBuilder";
 
 export function Bread(props) {
   const breadArray = [

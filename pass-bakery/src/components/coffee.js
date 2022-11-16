@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import MenuBuilder from "../Cart/MenuBuilder";
+import MenuBuilder from "./menuBuilder";
 
 const coffeeArray = [
   ["Espresso", 2.75],

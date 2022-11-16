@@ -1,8 +1,8 @@
-import Headline from "./Headline/Headline";
-import Coffee from "./Coffee/Coffee";
-import Breakfast from "./Breakfast/Breakfast";
-import Bread from "./Bread/Bread";
-import Cart from "./features/counter/cart";
+import Headline from "./components/headline/headline";
+import Coffee from "./components/coffee";
+import Breakfast from "./components/breakfast";
+import Bread from "./components/bread";
+import Cart from "./features/redux/cart";
 import styled from "styled-components";
 
 const Body = styled.body`

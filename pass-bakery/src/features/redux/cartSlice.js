@@ -1,9 +1,4 @@
-import {
-  createSlice,
-  createReducer,
-  createAction,
-  current,
-} from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
 const initialState = {
   items: [],

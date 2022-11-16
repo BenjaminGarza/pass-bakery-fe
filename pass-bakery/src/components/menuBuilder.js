@@ -1,6 +1,5 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { add } from "../features/counter/cartSlice";
+import { add } from "../features/redux/cartSlice";
 import { useDispatch } from "react-redux";
 import styled from "styled-components";
 
