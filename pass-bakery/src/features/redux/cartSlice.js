@@ -13,7 +13,7 @@ export const cartSlice = createSlice({
     },
     remove: (state, action) => {
       state.items = state.items.filter(
-        (array, currentElement) => currentElement !== action.payload
+        (item, indice) => indice !== action.payload
       );
     },
   },
