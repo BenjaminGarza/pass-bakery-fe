@@ -6,7 +6,7 @@ import {
 } from "@reduxjs/toolkit";
 
 const initialState = {
-  items: [["test", "5.99"]],
+  items: [["", ""]],
 };
 export const cartSlice = createSlice({
   name: "cart",
@@ -23,7 +23,7 @@ export const cartSlice = createSlice({
       //state.items.map()?
       //state.cart.items = ["action.payload"];
       // console.log(state.items[0][0], action.payload);
-
+      state.items = [...state.items, action.payload];
       console.log(current(state));
     },
     remove: (state, action) => {
