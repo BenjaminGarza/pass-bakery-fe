@@ -26,7 +26,6 @@ export default function MenuBuilder(props) {
 
   const Paragraph = styled.div`
     font-style: italic;
-    color: grey;
   `;
 
   return (

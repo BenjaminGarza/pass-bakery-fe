@@ -18,7 +18,8 @@ const Section = styled.section`
 `;
 
 const Bread = styled.img`
-  max-width: 520px;
+  max-width: 480px;
+  margin-left: 48px;
 `;
 
 const PassHeadline = styled.h1`
@@ -35,8 +36,8 @@ const Headline = () => {
       <div>
         <img src={logo} alt="one-pass" />
         <PassHeadline>Pass Bakery</PassHeadline>
-        <p>620 N 25th St, San Francisco, CA</p>
         <Title>Hours</Title>
+        <br />
         <p>
           Mon-Fri 6AM-5PM PT,
           <br />

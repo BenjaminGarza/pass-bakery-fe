@@ -9,18 +9,18 @@ export default function Cart(props) {
   const dispatch = useDispatch();
   const itemQuantity = cart.items.length;
   let price = 0;
-  if (itemQuantity > 1) {
-    for (let i = 1; i < itemQuantity; i++) {
-      console.log(price, cart.items[i][1], "Here one");
-      console.log(typeof price, typeof cart.items[i][1], "here is the test");
-      price += cart.items[i][1];
-      console.log(price, cart.items[i][1], "Here two");
-    }
+
+  for (let i = 0; i < itemQuantity; i++) {
+    console.log(price, cart.items[i][1], "Here one");
+    console.log(typeof price, typeof cart.items[i][1], "here is the test");
+    price += cart.items[i][1];
+    console.log(price, cart.items[i][1], "Here two");
   }
 
   const Aside = styled.aside`
-    min-width: 512px;
+    min-width: 384px;
     border-left: 3px solid lightgrey;
+    background-color: #fff;
   `;
   const Title = styled.h2`
     font-weight: bold;
@@ -33,14 +33,15 @@ export default function Cart(props) {
     font-size: 24px;
   `;
   const TotalPrice = styled.span`
-    font-size: 24px;
+    font-size: 21px;
+    font-weight: 400;
   `;
 
   const CheckoutButton = styled.button`
     width: 100%;
     height: 56px;
     color: white;
-    background-color: darkgreen;
+    background-color: darkolivegreen;
     font-weight: bold;
   `;
   const Div = styled.div`
@@ -49,21 +50,45 @@ export default function Cart(props) {
     padding: 32px;
     padding-top: 128px;
   `;
-  const Section = styled.section``;
+  const Section = styled.section`
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    padding-left: 24px;
+    padding-right: 48px;
+  `;
+  const Button = styled.button`
+    margin-top: 8px;
+    margin-left: 24px;
+    color: darkolivegreen;
+    border: none;
+    padding: 0px;
+  `;
+  const ItemTitle = styled.div`
+    font-weight: bold;
+    margin-top: 8px;
+  `;
+  const ItemPrice = styled.div`
+    font-weight: bold;
+    margin-top: 8px;
+  `;
+  const ItemWrapper = styled.div`
+    margin-bottom: 24px;
+  `;
 
   return (
     <Aside>
       <Title>Your Order</Title>
       {cart.items.map((item, itemIndex) => (
-        <div key={item}>
+        <ItemWrapper key={item}>
+          <Section>
+            <ItemTitle>{item[0]}</ItemTitle>
+            <ItemPrice>{"$" + item[1].toFixed(2)}</ItemPrice>
+          </Section>
           <div>
-            {item[0]}
-            {"$" + item[1].toFixed(2)}
+            <Button onClick={() => dispatch(remove(itemIndex))}>Remove</Button>
           </div>
-          <div>
-            <button onClick={() => dispatch(remove(itemIndex))}>Remove</button>
-          </div>
-        </div>
+        </ItemWrapper>
       ))}
 
       <Div>
