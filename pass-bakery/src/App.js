@@ -37,7 +37,7 @@ function App() {
           <Breakfast></Breakfast>
           <Bread />
         </Primary>
-        <Cart test="Hello" />
+        <Cart />
       </Body>
     </html>
   );

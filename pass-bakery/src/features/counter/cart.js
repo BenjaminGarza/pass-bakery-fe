@@ -4,6 +4,7 @@ import styled from "styled-components";
 
 export default function Cart(props) {
   const cart = useSelector((state) => state.cart);
+  const itemQuantity = cart.items.length;
 
   const Aside = styled.aside`
     min-width: 512px;
@@ -50,7 +51,7 @@ export default function Cart(props) {
         <TotalText>Your total is:</TotalText>
         <TotalPrice>${"0.00"}</TotalPrice>
       </Div>
-      <CheckoutButton>Checkout ({"numberOfItems"})</CheckoutButton>
+      <CheckoutButton>Checkout ({itemQuantity})</CheckoutButton>
     </Aside>
   );
 }
