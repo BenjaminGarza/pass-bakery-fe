@@ -40,7 +40,7 @@ export function Bread(props) {
     <section>
       <Title>Bread</Title>
       <ListContainer>
-        <ListItem Button onClick={() => dispatch(add("pain", "7.00"))}>
+        <ListItem Button onClick={() => dispatch(add(["pain", "7.00"]))}>
           <Subtitle>Pain de campagne</Subtitle>
           <br />
           <Paragraph>$7.00</Paragraph>

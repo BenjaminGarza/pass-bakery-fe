@@ -1,7 +1,12 @@
-import { createSlice } from "@reduxjs/toolkit";
+import {
+  createSlice,
+  createReducer,
+  createAction,
+  current,
+} from "@reduxjs/toolkit";
 
 const initialState = {
-  items: ["test", "5.99"],
+  items: [["test", "5.99"]],
 };
 export const cartSlice = createSlice({
   name: "cart",
@@ -13,9 +18,13 @@ export const cartSlice = createSlice({
       // which detects changes to a "draft state" and produces a brand new
       // immutable state based off those changes
 
-      //maybe use action.payload for the cart item?
-      state.cart.items = [action.payload];
-      console.log(...action.payload, "Action payload");
+      //loop through current cart and add every item to new cart
+      //at the end, push action.payload to the array
+      //state.items.map()?
+      //state.cart.items = ["action.payload"];
+      // console.log(state.items[0][0], action.payload);
+
+      console.log(current(state));
     },
     remove: (state, action) => {
       //declare index for removal
