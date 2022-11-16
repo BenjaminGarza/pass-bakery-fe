@@ -11,10 +11,7 @@ export default function Cart(props) {
   let price = 0;
 
   for (let i = 0; i < itemQuantity; i++) {
-    console.log(price, cart.items[i][1], "Here one");
-    console.log(typeof price, typeof cart.items[i][1], "here is the test");
     price += cart.items[i][1];
-    console.log(price, cart.items[i][1], "Here two");
   }
 
   const Aside = styled.aside`
