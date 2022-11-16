@@ -1,4 +1,4 @@
-import bread from "./bread.jpeg";
+import breadImage from "./breadImage.jpeg";
 import logo from "./one-pass.svg";
 import styled from "styled-components";
 
@@ -43,7 +43,7 @@ const Headline = () => {
         <br></br>
       </div>
       <div>
-        <Bread src={bread} alt="Fresh baked bread" />
+        <Bread src={breadImage} alt="Fresh baked bread" />
       </div>
     </Section>
   );
