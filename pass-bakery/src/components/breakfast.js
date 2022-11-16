@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import MenuBuilder from "./menuBuilder";
+import styled from "styled-components";
 
 const breakfastArray = [
   ["Oatmeal", 4.0],

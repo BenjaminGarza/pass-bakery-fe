@@ -1,8 +1,8 @@
+import { useDispatch, useSelector } from "react-redux";
+
 import React from "react";
-import { useSelector } from "react-redux";
-import styled from "styled-components";
-import { useDispatch } from "react-redux";
 import { remove } from "./cartSlice";
+import styled from "styled-components";
 
 export default function Cart(props) {
   const cart = useSelector((state) => state.cart);
