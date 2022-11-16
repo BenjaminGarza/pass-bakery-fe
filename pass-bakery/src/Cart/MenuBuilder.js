@@ -5,7 +5,7 @@ import { useDispatch } from "react-redux";
 import styled from "styled-components";
 
 export default function MenuBuilder(props) {
-  const dispatch = useDispatch();
+  //const dispatch = useDispatch();
   const itemTitle = props[0];
   const itemPrice = props[1];
 
@@ -40,8 +40,8 @@ export default function MenuBuilder(props) {
     //would need to return multiple
 
     //menuBuilder takes in item as props
-
-    <ListItem Button onClick={() => dispatch(add([itemTitle, itemPrice]))}>
+    //Button onClick={() => dispatch(add([itemTitle, itemPrice]))}
+    <ListItem>
       <Subtitle>{itemTitle}</Subtitle>
       <br />
       <Paragraph>{itemPrice}</Paragraph>
