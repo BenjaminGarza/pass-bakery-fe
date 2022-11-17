@@ -77,7 +77,7 @@ export default function Cart(props) {
     <Aside>
       <Title>Your Order</Title>
       {cart.items.map((item, itemIndex) => (
-        <ItemWrapper key={item}>
+        <ItemWrapper>
           <Section>
             <ItemTitle>{item[0]}</ItemTitle>
             <ItemPrice>{"$" + item[1].toFixed(2)}</ItemPrice>
