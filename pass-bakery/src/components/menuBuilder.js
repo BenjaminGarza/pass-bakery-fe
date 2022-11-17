@@ -27,11 +27,7 @@ export default function MenuBuilder(props) {
   `;
 
   return (
-    <ListItem
-      key={itemTitle}
-      Button
-      onClick={() => dispatch(add([itemTitle, itemPrice]))}
-    >
+    <ListItem Button onClick={() => dispatch(add([itemTitle, itemPrice]))}>
       <Subtitle>{itemTitle}</Subtitle>
       <br />
       <Paragraph>{itemPrice.toFixed(2)}</Paragraph>
